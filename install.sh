@@ -9,8 +9,11 @@
 
 cd ~/
 
-sudo wpa_passphrase "waffleiron" "wlp0s20u1" >> /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_passphrase "waffleiron" "Danzig@708" >> /etc/wpa_supplicant/wpa_supplicant.conf
 sudo wpa_supplicant -B - i wlp0s20u1 -c /etc/wpa_supplicant/wpa_supplicant.conf
+sudo ln -s /etc/sv/wpa_supplicant /var/service/
+
+sleep 20
 
 sudo xbps-install -Sy git
 
@@ -34,7 +37,7 @@ sudo touch /etc/asound.conf
 sudo echo "defaults.pcm.card 1" >> /etc/asound.conf
 sudo echo "defaults.pcm.device 0" >> /etc/asound.conf
 sudo echo "defaults.ctl.card 1" >> /etc/asound.conf
-sudo ln -s /etc/sv/alsa /var/service
+sudo ln -s /etc/sv/alsa /var/service/
 
 # track pad
 sudo touch /etc/dracut.conf.d/10-touchpad.conf
