@@ -15,7 +15,7 @@ cd ~/
 #
 # sleep 20
 
-sudo xbps-install -Sy git
+# sudo xbps-install -Sy git
 
 git clone https://github.com/void-linux/void-packages.git
 cd void-packages
