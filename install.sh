@@ -9,7 +9,7 @@
 
 cd ~/
 
-# sudo wpa_passphrase "waffleiron" "Danzig@708" >> /etc/wpa_supplicant/wpa_supplicant.conf
+# sudo wpa_passphrase "waffleiron" ----" >> /etc/wpa_supplicant/wpa_supplicant.conf
 # sudo wpa_supplicant -B - i wlp0s20u1 -c /etc/wpa_supplicant/wpa_supplicant.conf
 # sudo ln -s /etc/sv/wpa_supplicant /var/service/
 #
